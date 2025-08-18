@@ -1,0 +1,14 @@
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../src/assets/background.jpeg');
+  background-size: cover;         /* Cover entire area */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;   /* Prevent repeating */
+  background-attachment: fixed;   /* Optional: fixed on scroll */
+}

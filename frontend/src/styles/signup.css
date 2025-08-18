@@ -1,0 +1,108 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  user-select: none;
+}
+
+.app-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #54a0ff; /* bright blue for contrast */
+  font-weight: 700;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.signup-form {
+  max-width: 350px;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 2.5rem;
+  background-color: #000;         /* full black background */
+  border-radius: 15px;
+  box-shadow:
+    0 0 20px rgba(84, 160, 255, 0.5); /* subtle blue glow */
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;                    /* white text */
+}
+
+.signup-form input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #222;         /* dark border */
+  border-radius: 10px;
+  background-color: #111;         /* very dark input background */
+  color: #fff;                    /* white text */
+  box-shadow: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-form input::placeholder {
+  color: #777;                   /* dim placeholder */
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #54a0ff;          /* bright blue focus border */
+  background-color: #222;
+}
+
+.submit-btn {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(145deg, #4363d8, #1e2bb8); /* blue gradient */
+  border: none;
+  border-radius: 12px;
+  box-shadow:
+    3px 3px 8px rgba(20, 40, 120, 0.8),
+    -3px -3px 8px rgba(67, 99, 216, 0.9);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(145deg, #1e2bb8, #4363d8);
+  box-shadow:
+    5px 5px 12px rgba(20, 40, 120, 1),
+    -5px -5px 12px rgba(67, 99, 216, 1);
+}
+
+.form-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #54a0ff;
+  text-align: center;
+}
+
+.signup-form p {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.signup-form p a {
+  color: #54a0ff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: text-decoration 0.2s ease;
+}
+
+.signup-form p a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 0.8rem;
+  text-align: center;
+  user-select: none;
+}

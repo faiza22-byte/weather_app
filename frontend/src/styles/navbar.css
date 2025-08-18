@@ -1,0 +1,34 @@
+.navbar-content {
+  display: flex;
+  align-items: center; /* vertical center alignment */
+  gap: 30px;           /* space between logo and heading */
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  /* Remove padding here */
+  background-color: black; /* if needed to keep black bg */
+}
+
+.app-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+
+  /* Remove excessive padding-left */
+  padding-left: 0;
+  padding-right: 20px;
+
+  /* Blue border effect */
+  text-shadow:
+    -1px -1px 0 #0000ff,
+     1px -1px 0 #0000ff,
+    -1px  1px 0 #0000ff,
+     1px  1px 0 #0000ff;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

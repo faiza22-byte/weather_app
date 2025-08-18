@@ -1,0 +1,65 @@
+/* ======= Reset & base styles ======= */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;   /* prevent scrollbars on body */
+  background: black;  /* fallback background */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* ======= Left side Canvas container ======= */
+.left-canvas-container {
+  position: fixed;     /* fix position relative to viewport */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: calc(100vw - 360px); /* full width minus right sidebar width */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* ======= Right Sidebar (Your .body-wrapper already fixed) ======= */
+.body-wrapper {
+  /* your existing styles */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 360px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  font-family: Arial, sans-serif;
+  color: white;
+  z-index: 10;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+/* ======= Ensure Canvas covers left side fully ======= */
+canvas {
+  display: block; /* remove inline spacing */
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+}
+
+/* ======= Star background fixed below everything ======= */
+.star-background {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0;
+  pointer-events: none;
+  background: black;
+  display: block;
+}
