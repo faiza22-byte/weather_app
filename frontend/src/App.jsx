@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate , Outlet } from "react-router-dom";
 import Signup from "./components/signup";
 import Login from "./components/login";
-import Body from "./components/Body";
+import Body from "./components/body";
 import ForgotPassword from "./components/forgotPassword";
 import Dashboard from "./components/dashboard";
 import 'leaflet/dist/leaflet.css';
